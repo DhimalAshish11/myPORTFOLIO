@@ -21,7 +21,7 @@ const Footer = () => {
         <FaGithub size={20} style={{ color: "white", marginRight: "1.5rem" }} />
       </div>
 
-      <footer class="footer bg-dark text-light text-center py-5 mt-5">
+      <footer className="footer bg-dark text-light text-center py-5 mt-5">
         Copyritght &copy; all reserved. Made with 💓 by me.
       </footer>
     </div>
