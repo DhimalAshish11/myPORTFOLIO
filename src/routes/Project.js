@@ -8,7 +8,7 @@ export const Project = () => {
   return (
     <div>
       <NavBar />
-      <HeroIMG2 heading="PROJECTS" text="My recents Works" />
+      {/*  <HeroIMG2 heading="PROJECTS" text="My recents Works" /> */}
       <Work />
       <Footer />
     </div>
