@@ -1,0 +1,19 @@
+.myimg {
+  height: 300px;
+  width: 500px;
+  margin-left: 100px;
+}
+.project-heading {
+  text-align: center;
+  padding: 6rem 0 2rem 0;
+}
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0px;
+}
+.content {
+  margin-left: 100px;
+  padding-top: 100px;
+}

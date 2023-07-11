@@ -1,9 +1,7 @@
-import "./MySkillStyle.css";
-
 import React from "react";
 
 const MySkill = () => {
-  return <div></div>;
+  return;
 };
 
 export default MySkill;

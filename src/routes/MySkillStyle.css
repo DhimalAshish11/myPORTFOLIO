@@ -1,0 +1,27 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.project-heading {
+  text-align: center;
+  padding: 6rem 0 2rem 0;
+}
+.Logo {
+  overflow: hidden;
+  padding: 60px 0px;
+  white-space: nowrap;
+}
+
+.logo-slide {
+  display: inline-block;
+  animation: 5s slide infinite linear;
+}
+.logo-slide img {
+  height: 150px;
+  margin: 0px 40px;
+}

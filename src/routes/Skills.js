@@ -1,14 +1,25 @@
 import React from "react";
-import NavBar from "../Components/NavBar";
-import Footer from "../Components/Footer";
-import HeroIMG2 from "../Components/HeroIMG2";
-
+import git from "../Logos/githuub.jpg.png";
+import nodejs from "../Logos/node.jpg.png";
+import rct from "../Logos/react.jpg.png";
+import red from "../Logos/redux.jpg.png";
+import mongo from "../Logos/mongo.jpg.png";
+import JS from "../Logos/javascript.js.png";
+import "./MySkillStyle.css";
 export const Skills = () => {
   return (
-    <div>
-      <NavBar />
-      <HeroIMG2 heading="SKILLS" text="My Skills" />
-      <Footer />
+    <div className="skill-container">
+      <h1 className="project-heading">SKILLS</h1>
+      <div className="Logo">
+        <div className="logo-slide">
+          <img src={git} alt="" />
+          <img src={nodejs} alt="" />
+          <img src={rct} alt="" />
+          <img src={red} alt="" />
+          <img src={mongo} alt="" />
+          <img src={JS} alt="" />
+        </div>
+      </div>
     </div>
   );
 };
