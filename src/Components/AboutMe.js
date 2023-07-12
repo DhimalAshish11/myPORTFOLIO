@@ -25,7 +25,7 @@ const AboutMe = () => {
           </p>
           <p>
             <h3>Hobbies</h3>
-            <ul>
+            <ul className="hobbies">
               <li>Singing</li>
               <li>Singing</li>
               <li>Singing</li>
