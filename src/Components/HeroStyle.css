@@ -43,6 +43,9 @@
   font-weight: 200;
   text-transform: uppercase;
 }
+.BUTTONS {
+  padding: 1.5rem 0rem;
+}
 
 .content .btn {
   margin: 1rem 0.2rem;
