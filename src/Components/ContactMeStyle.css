@@ -18,12 +18,25 @@
   padding-top: 8rem;
 }
 
-button {
-  margin: 15rem;
-}
 .toForm {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 5rem 0rem;
+}
+
+.add-details {
+  height: 520px;
+  width: 350px;
+  color: white;
+  border: 1px solid whitesmoke;
+  border-radius: 30px;
+  padding: 50px 40px;
+  margin-top: 80px;
+}
+
+button {
+  position: absolute;
+  margin-top: 1.5rem;
+  padding: 5px 10px;
 }

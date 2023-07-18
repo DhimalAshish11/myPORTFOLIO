@@ -7,6 +7,7 @@ import Project from "./routes/Project";
 import Skills from "./routes/Skills";
 import Contact from "./routes/Contact";
 import About from "./routes/About";
+
 function App() {
   return (
     <>

@@ -47,9 +47,51 @@ const ContactMe = () => {
       <div className="toForm">
         <h1 className="project-heading">OR</h1>
 
-        <Link to="/project" className="btn">
-          Get In Touch
-        </Link>
+        <div className="connect">
+          <Link to="/project" className="btn">
+            Get In Touch
+          </Link>
+        </div>
+
+        <div className="form">
+          <section class="form">
+            <div class="add-details">
+              <form className="form-details">
+                <label for="company-name">Company Name:</label> <br />
+                <input
+                  type="text"
+                  id="institution-name"
+                  name="institution-name"
+                />
+                <br />
+                <br />
+                <label for="name">Name:</label> <br />
+                <input type="text" />
+                <br />
+                <br />
+                <label for="email">Email:</label>
+                <br />
+                <input type="text" />
+                <br />
+                <br />
+                <label for="phone">Grade:</label> <br />
+                <input type="number" />
+                <br />
+                <br />
+                <label for="message">Message:</label>
+                <br />
+                <textarea
+                  name="description"
+                  id="description"
+                  cols="15"
+                  rows="7"
+                ></textarea>
+                <br />
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </section>
+        </div>
       </div>
     </section>
   );
