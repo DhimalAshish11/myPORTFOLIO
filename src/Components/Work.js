@@ -1,4 +1,4 @@
-import "./WorkCardStyle.css";
+import "./WorkStyle.css";
 
 import React from "react";
 import WorkCard from "./WorkCard";

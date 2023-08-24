@@ -48,6 +48,7 @@
   padding: 0.5rem 1rem;
   border-radius: 20px;
 }
+
 @media screen and (max-width: 740px) {
   .project-container {
     max-width: 90%;
