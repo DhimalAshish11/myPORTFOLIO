@@ -1,5 +1,10 @@
-.Work-container {
-  background: url(/src/assets/bg1.jpg) center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+.work-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+.work-card.show {
+  opacity: 1;
+  transform: translateY(0);
 }
