@@ -1,15 +1,11 @@
 @keyframes slide {
   0% {
-    transform: translateX(0%);
-  }
-  50% {
-    transform: translateX(-50%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% - 70px)); /* Adjust margin value */
   }
 }
-
 .project-heading {
   text-align: center;
   padding: 6rem 0 2rem 0;
@@ -17,14 +13,14 @@
 .Logo {
   overflow: hidden;
   padding: 60px 0px;
-  white-space: nowrap;
 }
 
 .logo-slide {
-  display: inline-block;
-  animation: 5s slide infinite linear;
+  display: flex;
+  animation: 8s slide infinite linear;
 }
+
 .logo-slide img {
   height: 150px;
-  margin: 0px 40px;
+  margin-right: 70px;
 }

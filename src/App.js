@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 
 import { Routes, Route } from "react-router-dom";
+
 import Home from "./routes/Home";
 import Project from "./routes/Project";
 import Skills from "./routes/Skills";
