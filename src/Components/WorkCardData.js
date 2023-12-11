@@ -23,5 +23,11 @@ export const ProjectCardData = [
     text: "It is a simple weather app developed using javascripts and weather api. This app will tell you weather for any city after you put city name.",
     view: "https://www.linkedin.com/in/ashish-dhimal/",
   },
+  {
+    imgsrc: proImg3,
+    title: "Weather App",
+    text: "It is a simple weather app developed using javascripts and weather api. This app will tell you weather for any city after you put city name.",
+    view: "https://www.linkedin.com/in/ashish-dhimal/",
+  },
 ];
 export default ProjectCardData;

@@ -13,7 +13,10 @@ const WorkCard = (props) => {
           <NavLink to={props.view} className="btn">
             DEMO
           </NavLink>
-          <NavLink to="url.com" className="btn">
+          <NavLink
+            to="https://github.com/DhimalAshish11/Coding-Library-FrontEnd.git"
+            className="btn"
+          >
             SOURCE
           </NavLink>
         </div>
