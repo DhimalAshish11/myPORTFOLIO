@@ -4,22 +4,26 @@
 }
 
 .project-container {
-  max-width: 1140px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  max-width: 100%;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping to the next line */
+  display: flex; /* Make it a flex container */
   padding-bottom: 5rem;
 }
 
 .project-card {
   background: rgba(12, 12, 12, 0.863);
-  padding: 1.2rem 1rem;
+  width: 450px;
+  padding: 1rem; /* Adjust the padding */
+  margin: 4rem; /* Add margin for spacing between cards */
+  border-radius: 10px; /* Add border-radius for rounded corners */
 }
 
 .project-card img {
-  width: 100%;
-  height: 400px;
+  width: 400px;
+  height: 300px; /* Set a maximum height for the images */
+  object-fit: cover;
+  border-radius: 8px; /* Add border-radius for rounded corners */
 }
 
 .project-card img:hover {
@@ -31,12 +35,14 @@
 
 .project-title {
   color: white;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
 }
 .project-details {
-  padding-bottom: 1rem;
-  font-size: 1.1rem;
-  text-align: justify;
+  padding-bottom: 0.5rem;
+  font-size: 1rem; /* Increase font size for the details */
+  color: #ccc;
+  white-space: normal;
 }
 
 .pro-btns {
@@ -45,7 +51,7 @@
   padding: 1rem 0;
 }
 .pro-btns .btn {
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
   border-radius: 20px;
 }
 

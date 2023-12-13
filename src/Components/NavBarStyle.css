@@ -1,6 +1,6 @@
 .Header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem;
   position: fixed;
@@ -9,6 +9,7 @@
   z-index: 10;
   background-color: black;
 }
+
 .nav-menu {
   display: flex;
 }

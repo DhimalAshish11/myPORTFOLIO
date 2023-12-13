@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Element } from "react-scroll";
 import NavBar from "../Components/NavBar";
 import Hero from "../Components/Hero";
 import Footer from "../Components/Footer";
@@ -11,12 +11,23 @@ import ContactMe from "../Components/ContactMe";
 const Home = () => {
   return (
     <div>
-      <NavBar />
-      <Hero />
-      <Project />
-      <Skills />
-      <AboutMe />
-      <ContactMe />
+      <Element name="home">
+        <NavBar />
+        <Hero />
+      </Element>
+      <Element name="project">
+        <Project />
+      </Element>
+      <Element name="skills">
+        <Skills />
+      </Element>
+
+      <Element name="about">
+        <AboutMe />
+      </Element>
+      <Element name="contact">
+        <ContactMe />
+      </Element>
       <Footer />
     </div>
   );
