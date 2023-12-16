@@ -24,6 +24,7 @@ export const NavBar = () => {
           </ScrollLink>
         </li>
         <li>
+          
           <ScrollLink to="skills" smooth={true} duration={1000}>
             Skills
           </ScrollLink>

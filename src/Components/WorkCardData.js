@@ -1,6 +1,7 @@
 import proImg1 from "../assets/projectimg1.png";
 import proImg2 from "../assets/projectimg2.png";
 import proImg3 from "../assets/projectimg3.png";
+import proImg4 from "../assets/projectimg4.png";
 
 export const ProjectCardData = [
   {
@@ -19,14 +20,14 @@ export const ProjectCardData = [
 
   {
     imgsrc: proImg3,
-    title: "Weather App",
-    text: "It is a simple weather app developed using javascripts and weather api. This app will tell you weather for any city after you put city name.",
+    title: "E-commerce CMS",
+    text: "Developed an e-commerce Content Management System (CMS) from scratch, leveraging the power of MERN stack technology",
     view: "https://www.linkedin.com/in/ashish-dhimal/",
   },
   {
-    imgsrc: proImg3,
-    title: "Weather App",
-    text: "It is a simple weather app developed using javascripts and weather api. This app will tell you weather for any city after you put city name.",
+    imgsrc: proImg4,
+    title: "E-commerce Store",
+    text: "Established an innovative e-commerce platform tailored for a music retail experience. Seamlessly integrated features for browsing and purchasing music products.",
     view: "https://www.linkedin.com/in/ashish-dhimal/",
   },
 ];
