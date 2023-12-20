@@ -15,7 +15,7 @@ export const ProjectCardData = [
     imgsrc: proImg2,
     title: "Book Library",
     text: "Book library is a simple full-stack application that enables you to fetch the books and return it on time. It is a full-stack appilcation based on MERN stack.",
-    view: "https://www.linkedin.com/in/ashish-dhimal/",
+    view: "https://github.com/DhimalAshish11/Coding-Library.git",
   },
 
   {

@@ -2,7 +2,7 @@
 
 import React from "react";
 import "./AboutMeStyle.css";
-import profileImg from "../assets/no-bgprofile.jpg.png";
+import profileImg from "../assets/no-bg.jpg";
 
 const AboutMe = () => {
   return (
