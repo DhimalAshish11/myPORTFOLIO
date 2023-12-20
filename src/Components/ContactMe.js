@@ -11,7 +11,9 @@ const ContactMe = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     console.log(formDt);
-
+    console.log("Service ID:", process.env.REACT_APP_YOUR_SERVICE_ID);
+    console.log("Template ID:", process.env.REACT_APP_YOUR_TEMPLATE_ID);
+    console.log("Public Key:", process.env.REACT_APP_YOUR_PUBLIC_KEY);
     emailjs
       .sendForm(
         process.env.REACT_APP_YOUR_SERVICE_ID,
@@ -19,6 +21,7 @@ const ContactMe = () => {
         formRef.current, // Pass the form element directly
         process.env.REACT_APP_YOUR_PUBLIC_KEY
       )
+
       .then(
         (result) => {
           console.log(result.text);
@@ -82,24 +85,30 @@ const ContactMe = () => {
         <h1 className="project-heading">OR</h1>
 
         <div className="connect">
-          <Link to="/project" className="btn">
-            Get In Touch
-          </Link>
+          <Link className="btn">Get In Touch</Link>
         </div>
 
         <section className="form">
-          <div className="add-details">
-            <form ref={formRef} onSubmit={sendEmail}>
-              <label>Name</label>
-              <input type="text" name="name" onChange={handleOnChange} />
-              <label>Email</label>
-              <input type="email" name="email" onChange={handleOnChange} />
-              <label>Message</label>
-              <textarea name="message" onChange={handleOnChange} />
-              <button type="button" onClick={sendEmail}>
-                Submit
-              </button>
-            </form>
+          <div className="formD">
+            <div className="add-details">
+              <form ref={formRef} onSubmit={sendEmail}>
+                <label>Name</label>
+                <input type="text" name="name" onChange={handleOnChange} />
+                <label>Email</label>
+                <input type="email" name="email" onChange={handleOnChange} />
+                <label>Subject</label>
+                <input
+                  type="subject"
+                  name="subject"
+                  onChange={handleOnChange}
+                />
+                <label>Message</label>
+                <textarea name="message" onChange={handleOnChange} />
+                <button type="button" onClick={sendEmail}>
+                  Submit
+                </button>
+              </form>
+            </div>
           </div>
         </section>
       </div>
