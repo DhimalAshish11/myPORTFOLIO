@@ -1,10 +1,44 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./ContactMeStyle.css";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
 const ContactMe = () => {
+  const formRef = useRef();
+  const [formDt, setFormDt] = useState({});
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log(formDt);
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_YOUR_SERVICE_ID,
+        process.env.REACT_APP_YOUR_TEMPLATE_ID,
+        formRef.current, // Pass the form element directly
+        process.env.REACT_APP_YOUR_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const handleOnChange = (e) => {
+    const { name, value } = e.target;
+    setFormDt({
+      ...formDt,
+      [name]: value,
+    });
+  };
+
   return (
-    <section className="container ">
+    <section className="container">
       <div className="title">
         <h1 className="project-heading">FIND ME ON:</h1>
       </div>
@@ -53,45 +87,21 @@ const ContactMe = () => {
           </Link>
         </div>
 
-        <div className="form">
-          <section class="form">
-            <div class="add-details">
-              <form className="form-details">
-                <label for="company-name">Company Name:</label> <br />
-                <input
-                  type="text"
-                  id="institution-name"
-                  name="institution-name"
-                />
-                <br />
-                <br />
-                <label for="name">Name:</label> <br />
-                <input type="text" />
-                <br />
-                <br />
-                <label for="email">Email:</label>
-                <br />
-                <input type="text" />
-                <br />
-                <br />
-                <label for="phone">Grade:</label> <br />
-                <input type="number" />
-                <br />
-                <br />
-                <label for="message">Message:</label>
-                <br />
-                <textarea
-                  name="description"
-                  id="description"
-                  cols="15"
-                  rows="7"
-                ></textarea>
-                <br />
-                <button type="submit">Submit</button>
-              </form>
-            </div>
-          </section>
-        </div>
+        <section className="form">
+          <div className="add-details">
+            <form ref={formRef} onSubmit={sendEmail}>
+              <label>Name</label>
+              <input type="text" name="name" onChange={handleOnChange} />
+              <label>Email</label>
+              <input type="email" name="email" onChange={handleOnChange} />
+              <label>Message</label>
+              <textarea name="message" onChange={handleOnChange} />
+              <button type="button" onClick={sendEmail}>
+                Submit
+              </button>
+            </form>
+          </div>
+        </section>
       </div>
     </section>
   );
