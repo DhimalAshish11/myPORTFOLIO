@@ -11,12 +11,6 @@ const WorkCard = (props) => {
         <p>{props.text}</p>
         <div className="pro-btns">
           <NavLink to={props.view} className="btn">
-            DEMO
-          </NavLink>
-          <NavLink
-            to="https://github.com/DhimalAshish11/Coding-Library-FrontEnd.git"
-            className="btn"
-          >
             SOURCE
           </NavLink>
         </div>

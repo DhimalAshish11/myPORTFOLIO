@@ -10,14 +10,14 @@ const ContactMe = () => {
       </div>
 
       <div className="social">
-        <a href="">
+        <a href="https://www.facebook.com/ashishyongyang.kamal/">
           <FaFacebook
             size={70}
             style={{ color: "white", marginRight: "1.5rem" }}
           />{" "}
           <h5>ashishdhimal</h5>
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/ashish-dhimal?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bit2%2F%2Fe9YTNqzjkolCCHxUQ%3D%3D">
           {" "}
           <FaLinkedin
             size={70}
@@ -26,7 +26,7 @@ const ContactMe = () => {
           <h5>ashishdhimal</h5>
         </a>
 
-        <a href="">
+        <a href="https://www.instagram.com/yonyangkamal/">
           {" "}
           <FaInstagram
             size={70}
@@ -35,7 +35,7 @@ const ContactMe = () => {
           <h5>ashishdhimal</h5>
         </a>
 
-        <a href="">
+        <a href="https://github.com/DhimalAshish11">
           {" "}
           <FaGithub
             size={70}

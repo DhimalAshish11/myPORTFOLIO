@@ -12,6 +12,7 @@
 
 .nav-menu {
   display: flex;
+  cursor: pointer;
 }
 
 .nav-menu li {

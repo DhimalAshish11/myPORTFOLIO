@@ -8,7 +8,7 @@ export const ProjectCardData = [
     imgsrc: proImg1,
     title: "Task Management",
     text: "Task Mangement is a simple application that enables you to manage your day-day tasks and help you to manage your time.",
-    view: "https://www.linkedin.com/in/ashish-dhimal/",
+    view: "https://github.com/DhimalAshish11/full-stack--Not-To-Do.git",
   },
 
   {
@@ -22,13 +22,13 @@ export const ProjectCardData = [
     imgsrc: proImg3,
     title: "E-commerce CMS",
     text: "Developed an e-commerce Content Management System (CMS) from scratch, leveraging the power of MERN stack technology",
-    view: "https://www.linkedin.com/in/ashish-dhimal/",
+    view: "https://github.com/DhimalAshish11/e-com_cms.git",
   },
   {
     imgsrc: proImg4,
     title: "E-commerce Store",
     text: "Established an innovative e-commerce platform tailored for a music retail experience. Seamlessly integrated features for browsing and purchasing music products.",
-    view: "https://www.linkedin.com/in/ashish-dhimal/",
+    view: "https://github.com/DhimalAshish11/client-frontend.git",
   },
 ];
 export default ProjectCardData;

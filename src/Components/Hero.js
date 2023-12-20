@@ -1,10 +1,9 @@
 import "./HeroStyle.css";
+import { Link as ScrollLink } from "react-scroll";
 
 import React from "react";
 import HeroImg from "../assets/bg2.jpg";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-
-import { Link } from "react-router-dom";
 
 export const Hero = () => {
   const [text] = useTypewriter({
@@ -28,12 +27,22 @@ export const Hero = () => {
           </h1>
 
           <div className="BUTTONS">
-            <Link to="/project" className="btn">
-              project
-            </Link>
-            <Link to="/contact" className="btn btn-light">
+            <ScrollLink
+              to="project"
+              className="btn"
+              smooth={true}
+              duration={1000}
+            >
+              Projects
+            </ScrollLink>
+            <ScrollLink
+              to="contact"
+              className="btn btn-light"
+              smooth={true}
+              duration={1000}
+            >
               Contact
-            </Link>
+            </ScrollLink>
           </div>
         </div>
       </div>
